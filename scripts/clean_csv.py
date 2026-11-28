@@ -11,4 +11,3 @@ def drop_empty(rows: list[dict[str, str]]) -> list[dict[str, str]]:
 
 def count_missing(rows: list[dict[str, str]], key: str) -> int:
     return sum(1 for r in rows if not r.get(key))
-
